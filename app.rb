@@ -3,10 +3,7 @@ require "sinatra/reloader"
 require "active_support/all"
 
 get("/") do
-  "
-  <h1>Welcome to your Sinatra App!</h1>
-  <p>Define some routes in app.rb</p>
-  "
+  erb(:square_calc)
 end
 
 get("/square/new") do
